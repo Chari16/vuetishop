@@ -104,7 +104,7 @@ export default {
     };
   },
   mounted () {
-    console.log(" value ",process.env.NODE_ENV)
+    console.log(" value ",process.env)
   }
 };
 </script>
