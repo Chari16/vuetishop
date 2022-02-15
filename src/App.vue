@@ -29,6 +29,12 @@
             <li class="nav-item">
               <router-link to="/about" class="nav-link float-right">About</router-link>
             </li>
+            <li class="nav-item">
+              <a class="nav-link float-right environment"> {{ environment }} </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link float-right value"> {{ value }} </a>
+            </li>
           </ul>
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
@@ -92,10 +98,14 @@
 export default {
   data() {
     return {
-      cartValue: 0
+      cartValue: 0,
+      environment: process.env.NODE_ENV,
+      value: process.env.TEST
     };
+  },
+  mounted () {
+    console.log(" value ",process.env.NODE_ENV)
   }
-
 };
 </script>
 
@@ -180,6 +190,12 @@ footer {
 
 .buttonGreen:hover {
   background-color: #42a97b;
+}
+.environment {
+  background-color: #ffff00 !important;
+}
+.value {
+  background-color: #007bff !important;
 }
 
 </style>
