@@ -18,3 +18,5 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_VUE_TEST_DEPLOY_77A6F }}'
           channelId: live
           projectId: vue-test-deploy-77a6f
+        env:
+          VUE_APP_TEST: ${{ secrets.VUE_APP_TEST }}
