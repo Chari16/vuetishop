@@ -104,7 +104,7 @@ export default {
     };
   },
   mounted () {
-    console.log(" value ", process.env.DRIP_API_HOST)
+    console.log(" value ", process.env)
   }
 };
 </script>
