@@ -100,11 +100,11 @@ export default {
     return {
       cartValue: 0,
       environment: process.env.NODE_ENV,
-      value: process.env.TEST
+      value: process.env.VUE_APP_TEST
     };
   },
   mounted () {
-    console.log(" value ",process.env)
+    console.log(" value ", process.env.DRIP_API_HOST)
   }
 };
 </script>
